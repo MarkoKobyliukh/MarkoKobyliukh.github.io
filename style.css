@@ -1,0 +1,75 @@
+body   {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-color: #f4f7fb;
+    color: #333333;
+    margin: 0;
+    padding: 20px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.cv-header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border-bottom: 2px solid #eef2f5;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.header-text h1 {
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+}
+
+.social-profiles a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.social-profiles a:hover {
+    text-decoration: underline;
+}
+
+.cv-section {
+    margin-bottom: 30px;
+}
+
+.cv-section h2{
+    color: #2c3e50;
+    border-left: 4px solid #3498db;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+.personal-info-list {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+}
+
+.interests-list {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+}
