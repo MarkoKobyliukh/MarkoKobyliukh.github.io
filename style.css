@@ -68,8 +68,45 @@ main {
     gap: 10px; 
 }
 
-.interests-list {
+.social-profiles {
     display: flex;
-    flex-direction: column; 
-    gap: 10px; 
+    flex-wrap: wrap;
+    gap: 6px 20px;
+}
+
+.summary {
+    line-height: 1.5;
+}
+
+.certificate-list,
+.languages-list,
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project {
+    margin-bottom: 25px;
+}
+
+.project h3 {
+    margin: 0 0 4px 0;
+    color: #2c3e50;
+}
+
+.project h3 a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.project h3 a:hover {
+    text-decoration: underline;
+}
+
+.project-tag {
+    margin: 0 0 8px 0;
+    color: #6b7280;
+    font-style: italic;
+    font-size: 0.9em;
 }

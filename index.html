@@ -12,7 +12,6 @@
         <img
           src="images/cv-photo.jpg"
           alt="profile photo"
-          
           class="profile-img"
         />
         <div class="header-text">
@@ -24,79 +23,177 @@
             <a href="https://github.com/MarkoKobyliukh" target="_blank"
               >GitHub Profile</a
             >
+            <a href="mailto:k.marko007a@gmail.com">k.marko007a@gmail.com</a>
           </div>
         </div>
       </header>
+
       <section class="cv-section">
-      <h2>About me:</h2>
-      <ul class="personal-info-list">
-        <li><b>Role:</b> Junior Full Stack developer</li>
-        <li>
-          <b>Education:</b> Computer Science student (Software Engineering,
-          semester 5 of 7 ) at Akademia Finansów i Biznesu Vistula, Warsaw
-        </li>
-        <li><b>English:</b> B2+</li>
-        <li><b>Location:</b> Warsaw, Poland</li>
-        <li>
-          <b>Pet-project:</b>
-          <a href="https://pulselink.fit/" target="_blank"
-            >https://pulselink.fit/</a
-          >
-        </li>
-        <li>
-          <b>PulseLink</b> is a production SaaS platform for online fitness
-          coaching with real users — designed and shipped solo from zero to
-          live. Multi-role auth, coach/client dashboards, subscription billing,
-          real-time data sync
-        </li>
-      </ul>
+        <h2>About me:</h2>
+        <p class="summary">
+          Third-year CS student based in Warsaw, building full-stack systems
+          across Java and TypeScript. I have shipped a live commercial SaaS
+          (<b>PulseLink</b>) and multiple Java Spring Boot projects with layered
+          architecture, PostgreSQL, and proper test suites. I use
+          <b>Claude Code</b> as a core part of my daily workflow — ADR-driven
+          stage planning, tests alongside features, structured iteration. I am
+          genuinely interested in full-stack engineering and looking for an
+          environment where I can contribute to a real product while growing
+          fast.
+        </p>
+        <ul class="personal-info-list">
+          <li>
+            <b>Education:</b> Computer Science student (Software Engineering,
+            2024 – 2028, currently year 3) at Akademia Finansów i Biznesu
+            Vistula, Warsaw
+          </li>
+          <li><b>Location:</b> Warsaw, Poland</li>
+        </ul>
       </section>
+
       <section class="cv-section">
-      <h2>Technical Skills:</h2>
-      <ul class="skills-list">
-        <li><b>Languages:</b> TypeScript, JavaScript, HTML5, CSS3, SQL</li>
-        <li>
-          <b>Fornted:</b> React, Next.js (App Router, Server Components, Server
-          Actions), Vite, functional components, hooks, Context API
-        </li>
-        <li><b>Backend:</b> Node.js</li>
-        <li>
-          <b>UI / Styling:</b> Tailwind CSS v4, shadcn/ui (component library),
-          responsive & mobile-first design
-        </li>
-        <li>
-          <b>API Integration:</b> REST API (fetch, JSON, HTTP methods, status
-          codes), Supabase client, JWT auth
-        </li>
-        <li>
-          <b>Testing:</b> Vitest — unit tests written after each feature;
-          test-after-each-stage discipline
-        </li>
-        <li>
-          <b>Databases:</b> PostgreSQL (schema design, SQL, RLS, migrations)
-        </li>
-        <li><b>DevOps / CI-CD:</b> Git, GitHub, Docker basics, Vercel</li>
-        <li>
-          <b>Payments:</b> Stripe — checkout sessions, subscription lifecycle,
-          webhook processing
-        </li>
-        <li>
-          <b>AI Tooling:</b> Claude Code — primary development agent, structured
-          context, custom skills
-        </li>
-        <li>
-          <b>Concepts:</b> REST, OOP, Clean Code, SOLID, component-driven UI,
-          Agile basics, CI/CD
-        </li>
-      </ul>
+        <h2>Technical Skills:</h2>
+        <ul class="skills-list">
+          <li>
+            <b>Java:</b> Java 21; OOP, data structures; Spring Boot 3.2
+            (basic), Spring Data JPA, Hibernate, Flyway, Lombok, Maven
+          </li>
+          <li>
+            <b>TypeScript / JavaScript:</b> strict TypeScript, ES6+, React 19,
+            Next.js 16 (App Router, Server Components, Server Actions)
+          </li>
+          <li>
+            <b>Frontend:</b> HTML5, CSS3, Tailwind CSS 4, shadcn/ui, Framer
+            Motion, Recharts, react-hook-form, Zod 4
+          </li>
+          <li>
+            <b>REST APIs:</b> HTTP methods, JSON; Spring MVC controllers
+            (@RestController); Next.js Server Actions; Stripe webhooks
+          </li>
+          <li>
+            <b>Databases:</b> PostgreSQL, MySQL, SQLite; relational schema
+            design (3NF); Flyway and Goose versioned migrations
+          </li>
+          <li>
+            <b>Testing:</b> JUnit 5, Mockito, @WebMvcTest, @DataJpaTest, H2;
+            Vitest 5; testcontainers-go for real DB integration tests;
+            tests written after each feature
+          </li>
+          <li>
+            <b>AI &amp; workflow:</b> Claude Code (ADR-driven staged
+            development, tests alongside features); active daily use
+          </li>
+          <li><b>Node.js:</b> Express, NestJS (basic), MongoDB + Mongoose</li>
+          <li>
+            <b>Tools:</b> Git, GitHub, Postman, basic Docker, Vercel, ESLint,
+            golangci-lint, govulncheck
+          </li>
+        </ul>
       </section>
+
       <section class="cv-section">
-      <h2>Interests:</h2>
-      <ul class="interests-list">
-        <li>Sports</li>
-        <li>Chess</li>
-        <li>Movies</li>
-      </ul>
+        <h2>Projects:</h2>
+
+        <article class="project">
+          <h3>
+            PulseLink —
+            <a href="https://pulselink.fit/" target="_blank"
+              >https://pulselink.fit</a
+            >
+          </h3>
+          <p class="project-tag">private repository · live commercial platform</p>
+          <p>
+            A fitness SaaS I built and operate solo — Stripe subscriptions
+            running in production. Mobile version currently in development.
+          </p>
+          <ul class="project-list">
+            <li>
+              Next.js 16, React 19, TypeScript strict — App Router, Server
+              Components, Server Actions
+            </li>
+            <li>
+              Supabase (auth, PostgreSQL, RLS) + Stripe 21 (subscriptions,
+              webhooks, failed-payment retry)
+            </li>
+            <li>
+              next-intl 4 (multi-language), Recharts analytics dashboard, Resend
+              transactional email
+            </li>
+            <li>
+              Tailwind CSS 4, shadcn/ui, Framer Motion; Vitest 5 test suite;
+              Vercel CI/CD
+            </li>
+            <li>
+              Developed entirely with Claude Code — staged workflow, ADRs,
+              iterative delivery
+            </li>
+          </ul>
+        </article>
+
+        <article class="project">
+          <h3>Vehicle Station Monitor</h3>
+          <p class="project-tag">
+            Go · MySQL · SQLite · private repository · in progress
+          </p>
+          <p>
+            Go backend for vehicle-passage tracking at weighing stations —
+            currently my main learning project outside the Java/TypeScript
+            stack.
+          </p>
+          <ul class="project-list">
+            <li>
+              Go 1.27; MySQL + SQLite; Goose migrations; testcontainers-go for
+              real DB integration tests; property-based testing (rapid)
+            </li>
+            <li>
+              Excel and PDF report generation; Argon2id auth; Server-Sent
+              Events; OpenTelemetry; govulncheck in CI
+            </li>
+            <li>
+              ADR-driven architecture; React + TypeScript SPA embedded in Go
+              binary via embed
+            </li>
+          </ul>
+        </article>
+
+        <article class="project">
+          <h3>Sports Event Calendar</h3>
+          <p class="project-tag">
+            Java 21 · Spring Boot 3.2 · PostgreSQL · Thymeleaf · Tailwind CSS
+          </p>
+          <p>
+            Full-stack event management application built for the Sportradar
+            Coding Academy exercise — REST API and a server-rendered web UI.
+          </p>
+          <ul class="project-list">
+            <li>
+              7-table PostgreSQL schema in 3NF; Flyway versioned migrations;
+              Spring Data JPA + Hibernate
+            </li>
+            <li>
+              Full REST API with structured error handling; 54 tests (JUnit 5,
+              Mockito, @WebMvcTest, @DataJpaTest)
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="cv-section">
+        <h2>Certificate:</h2>
+        <ul class="certificate-list">
+          <li>
+            <b>Modern Frontend Fundamentals with AI</b> — SoftServe IT Academy
+          </li>
+        </ul>
+      </section>
+
+      <section class="cv-section">
+        <h2>Languages:</h2>
+        <ul class="languages-list">
+          <li><b>Ukrainian</b> — native</li>
+          <li><b>English</b> — B2+</li>
+          <li><b>Polish</b> — A2</li>
+        </ul>
       </section>
     </main>
   </body>
